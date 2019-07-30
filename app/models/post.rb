@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
 
   def clickbate?
     if self.title && !self.title.match(/Won't Believe|Secret|Top [\d*]|Guess/)
-      errors.add(:clickbate, "is not good enough")
+      errors.add(:clickbate, "is not catchy enough!")
     end
   end
 end
